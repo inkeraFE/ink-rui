@@ -7,7 +7,7 @@ module.exports = function override(config, env) {
     const workboxConfig = {
       ...defaultInjectConfig,
       importWorkboxFrom: 'local',
-      swSrc: './src/sw.js',
+      swSrc: './sw.js',
       swDest: 'service-worker.js',
     };
     console.log('Production build - Adding Workbox for PWAs');

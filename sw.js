@@ -1,5 +1,5 @@
-/* eslint disable */
-import workbox from 'workbox'
+/* eslint-disable no-undef */
+/* eslint-disable no-restricted-globals */
 
 workbox.routing.registerRoute(
   new RegExp("https:.*.(css|js)"),
