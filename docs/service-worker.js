@@ -1,6 +1,7 @@
-importScripts("/precache-manifest.103960f4d3730721970d47dc41e50d55.js", "/workbox-v4.3.1/workbox-sw.js");
-workbox.setConfig({modulePathPrefix: "/workbox-v4.3.1"});
+importScripts("./precache-manifest.fbd2b376f3f394b877df6e605dc1b9b9.js", "./workbox-v4.3.1/workbox-sw.js");
+workbox.setConfig({modulePathPrefix: "./workbox-v4.3.1"});
 /* eslint disable */
+import workbox from 'workbox'
 
 workbox.routing.registerRoute(
   new RegExp("https:.*.(css|js)"),

@@ -1,4 +1,5 @@
 /* eslint disable */
+import workbox from 'workbox'
 
 workbox.routing.registerRoute(
   new RegExp("https:.*.(css|js)"),
