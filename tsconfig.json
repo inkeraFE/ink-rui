@@ -19,7 +19,14 @@
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true
   },
+  "typeRoots" : [
+    "node_modules/@types",
+    "./*.d.ts"
+  ],
   "include": [
     "src"
+  ],
+  "exclude": [
+    "src/assets"
   ]
 }

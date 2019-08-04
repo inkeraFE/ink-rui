@@ -1,11 +1,27 @@
-import React from 'react';
-import './App.less';
+import React from "react";
+import { HashRouter, Route, Switch } from "react-router-dom";
+import Loadable from '@loadable/component'; 
+import Home from "./view/home";
 
-const App: React.FC = () => {
+const components: string[] = ["flex"];
+
+function App() {
   return (
-    <div className="App">
-      hello
-    </div>
+    <HashRouter>
+      <Switch>
+        {components.map((item, index) => {
+          return (
+            <Route
+              key={index}
+              exact
+              path={`/${item}`}
+              component={Loadable(() => import(`./view/${item}`))}
+            />
+          );
+        })}
+        <Route path="/" component={Home} />
+      </Switch>
+    </HashRouter>
   );
 }
 
