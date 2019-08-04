@@ -1,7 +1,7 @@
 const { rewireWorkboxInject, defaultInjectConfig } = require('react-app-rewire-workbox');
 const path = require('path');
 const paths = require('react-scripts/config/paths');
-const { override, addLessLoader } = require("customize-cra");
+const { addLessLoader } = require("customize-cra");
 
 module.exports = function override(config, env) {
   if (env === 'production') {
@@ -15,13 +15,11 @@ module.exports = function override(config, env) {
     config = rewireWorkboxInject(workboxConfig)(config, env);
   }
 
+  addLessLoader()(config)
+
   paths.appBuild = path.join(path.dirname(paths.appBuild), 'docs');
   config.output.path = path.join(path.dirname(config.output.path || '/'), 'docs');
   config.output.publicPath = env === 'production' ? './' : '/';
 
   return config;
 };
-
-module.exports = override(
-  addLessLoader()
-);
