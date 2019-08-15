@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-restricted-globals */
-
+workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 const CACHE_NAME = 'ink-rui-demo'
 
 function generateCacheableConfig(name, maxEntry, maxDay) {
@@ -27,15 +27,3 @@ workbox.routing.registerRoute(
   new RegExp('/.*.js'),
   workbox.strategies.cacheFirst(generateCacheableConfig('js', 10, 7))
 )
-
-
-self.addEventListener("install", event => {
-  console.log("install", event);
-  self.skipWaiting();
-});
-
-self.addEventListener("activate", event => {
-  console.log("activate", event);
-});
-
-workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
