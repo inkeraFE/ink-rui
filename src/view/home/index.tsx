@@ -12,6 +12,22 @@ const compList: any[] = [
         text: "Flex",
         routeName: "flex",
       },
+      {
+        text: "Button",
+        routeName: "button",
+      },
+      {
+        text: "Radio",
+        routeName: "radio",
+      },
+      {
+        text: "Switch",
+        routeName: "switch",
+      },
+      {
+        text: "Loading",
+        routeName: "loading",
+      },
     ],
   },
 ];
