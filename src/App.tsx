@@ -3,7 +3,15 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 import Loadable from "@loadable/component";
 import Home from "./view/home";
 
-const components: string[] = ["flex", "button", "loading", "radio", "switch"];
+const components: string[] = [
+  "flex",
+  "button",
+  "loading",
+  "radio",
+  "switch",
+  "progress",
+  "search_bar",
+];
 
 function App() {
   return (

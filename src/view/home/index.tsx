@@ -28,8 +28,20 @@ const compList: any[] = [
         text: "Loading",
         routeName: "loading",
       },
+      {
+        text: "Progress",
+        routeName: "progress",
+      },
+      {
+        text: "SearchBar",
+        routeName: "search_bar",
+      }
     ],
   },
+  {
+    title: "Navigation",
+    childs: []
+  }
 ];
 
 const Home: React.FC = () => {
