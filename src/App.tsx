@@ -11,6 +11,7 @@ const components: string[] = [
   "switch",
   "progress",
   "search_bar",
+  "header"
 ];
 
 function App() {

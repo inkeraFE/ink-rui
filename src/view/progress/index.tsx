@@ -28,7 +28,7 @@ const Component = ({ history }: any) => {
           <div className="value">60%</div>
         </div>
         <div className="item">
-          <Progress strokeColor="#6cd298" strokeHeight="3px" percent={80}/>
+          <Progress strokeColor="#6cd298" strokeHeight={3} percent={80}/>
           <div className="value">80%</div>
         </div>
       </Flex>

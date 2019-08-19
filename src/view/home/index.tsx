@@ -40,7 +40,12 @@ const compList: any[] = [
   },
   {
     title: "Navigation",
-    childs: []
+    childs: [
+      {
+        text: "Header",
+        routeName: "header",
+      }
+    ]
   }
 ];
 
