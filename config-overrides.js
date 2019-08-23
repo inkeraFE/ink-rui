@@ -21,5 +21,7 @@ module.exports = function override(config, env) {
   config.output.path = path.join(path.dirname(config.output.path || '/'), 'docs');
   config.output.publicPath = env === 'production' ? './' : '/';
 
+  // npm link 两个react版本 hook 不可用
+  if (env === 'development') config.resolve.alias = { react: require.resolve('react') }
   return config;
 };
