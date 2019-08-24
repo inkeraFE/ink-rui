@@ -12,7 +12,8 @@ const components: string[] = [
   "progress",
   "search_bar",
   "header",
-  "carousel"
+  "carousel",
+  "tabs"
 ];
 
 function App() {

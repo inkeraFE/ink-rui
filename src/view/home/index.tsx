@@ -44,6 +44,10 @@ const compList: any[] = [
       {
         text: "Header",
         routeName: "header",
+      },
+      {
+        text: "Tabs",
+        routeName: "tabs",
       }
     ]
   },
