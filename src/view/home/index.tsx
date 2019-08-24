@@ -46,6 +46,15 @@ const compList: any[] = [
         routeName: "header",
       }
     ]
+  },
+  {
+    title: 'Gesture',
+    childs: [
+      {
+        text: 'Carousel',
+        routeName: 'carousel'
+      }
+    ]
   }
 ];
 
