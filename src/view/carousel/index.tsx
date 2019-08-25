@@ -19,16 +19,10 @@ const Component = ({ history }: any) => {
           <div className="carousel-item-demo item3">item3</div>
         </Carousel>
         <DemoTitle>分页</DemoTitle>
-        <Carousel dots autoPlay>
-            <div className="carousel-item-demo item1">item1</div>
-            <div className="carousel-item-demo item2">item2</div>
-            <div className="carousel-item-demo item3">item3</div>
-        </Carousel>
-        <DemoTitle>无手势</DemoTitle>
-        <Carousel disabledGesture autoPlay loop>
-            <div className="carousel-item-demo item1">item1</div>
-            <div className="carousel-item-demo item2">item2</div>
-            <div className="carousel-item-demo item3">item3</div>
+        <Carousel dots loop>
+          <div className="carousel-item-demo item1">item1</div>
+          <div className="carousel-item-demo item2">item2</div>
+          <div className="carousel-item-demo item3">item3</div>
         </Carousel>
         </div>
     </Page>
